@@ -1,0 +1,60 @@
+// pages/blog.js
+import React from 'react';
+
+function BlogPage() {
+  return (
+    <div>
+      <h1>Blog</h1>
+      <p>Welcome to our blog page.</p>
+    </div>
+  );
+}
+
+export default BlogPage;
+// components/Button.js
+import React from 'react';
+
+function Button({ text, onClick }) {
+  return (
+    <button onClick={onClick}>{text}</button>
+  );
+}
+
+export default Button;
+// components/Button.js
+import './styles.css';
+import Link from 'next/link';
+
+// Usage
+<Link href="/blog">
+  <a>Go to Blog</a>
+</Link>
+// pages/blog.js
+import React, { useState, useEffect } from 'react';
+import { fetchBlogPosts } from '../lib/api';
+
+function BlogPage() {
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const data = await fetchBlogPosts();
+      setBlogPosts(data);
+    }
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      <h1>Blog</h1>
+      <ul>
+        {blogPosts.map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default BlogPage;
