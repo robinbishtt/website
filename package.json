@@ -39,7 +39,7 @@
   "dependencies": {
     "@docsearch/react": "^3.1.0",
     "@fec/remark-a11y-emoji": "^1.0.0",
-    "@floating-ui/react-dom-interactions": "^0.1.1",
+    "@floating-ui/react-dom-interactions": "^0.13.3",
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "@heroicons/react": "^1.0.5",
     "@mdx-js/loader": "1.6.4",
