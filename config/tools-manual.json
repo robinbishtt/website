@@ -29,7 +29,81 @@
     },
     "AsyncAPI Generator Templates": {
         "description": "The following is a list of templates compatible with AsyncAPI Generator. You can use them to generate apps, clients or documentation from your AsyncAPI documents.",
-        "toolsList": []
+        "toolsList": [
+            {
+                "title": "Go Watermill Template",
+                "description": "Generates Go client using Watermill",
+                "links": {
+                    "repoUrl": "https://github.com/asyncapi/go-watermill-template"
+                },
+                "filters": {
+                    "language": "Go",
+                    "technology": ["Watermill"],
+                    "categories": ["generator-template"]
+                }
+            },
+            {
+                
+                "title": "Node.js Template",
+                "description": "Generates Node.js client and server code",
+                "links": {
+                    "repoUrl": "https://github.com/asyncapi/nodejs-template"
+                },
+                "filters": {
+                    "language": "JavaScript",
+                    "technology": ["Node.js"],
+                    "categories": ["generator-template"]
+                }
+            },
+            {
+                "title": "Markdown Template",
+                "description": "Generates documentation in Markdown format",
+                "links": {
+                    "repoUrl": "https://github.com/asyncapi/markdown-template"
+                },
+                "filters": {
+                    "language": "Markdown",
+                    "technology": [],
+                    "categories": ["generator-template"]
+                }
+            },
+            {
+                "title": "Python Paho Template",
+                "description": "Generates Python client using Paho MQTT",
+                "links": {
+                    "repoUrl": "https://github.com/asyncapi/python-paho-template"
+                },
+                "filters": {
+                    "language": "Python",
+                    "technology": ["Paho"],
+                    "categories": ["generator-template"]
+                }
+            },
+            {
+                "title": "Dotnet RabbitMQ Template",
+                "description": "Generates .NET client using RabbitMQ",
+                "links": {
+                    "repoUrl": "https://github.com/asyncapi/dotnet-rabbitmq-template"
+                },
+                "filters": {
+                    "language": ".NET",
+                    "technology": ["RabbitMQ"],
+                    "categories": ["generator-template"]
+                }
+            },
+            {
+                "title": "Node.js WebSocket Template",
+                "description": "Generates Node.js client and server code using WebSocket",
+                "links": {
+                    "repoUrl": "https://github.com/asyncapi/nodejs-ws-template"
+                },
+                "filters": {
+                    "language": "JavaScript",
+                    "technology": ["WebSocket"],
+                    "categories": ["generator-template"]
+                }
+            }
+        ]
     },
     "Code-first tools": {
         "description": "The following is a list of tools that generate AsyncAPI documents from your code.",
@@ -42,6 +116,18 @@
                 },
                 "filters": {
                     "language": "Go",
+                    "categories": ["code-first"]
+                }
+            },
+            {
+                "title": "AsyncApi.Net.Generator",
+                "description": "Code-first AsyncAPI documentation generator and ui",
+                "links": {
+                    "repoUrl": "https://github.com/yurvon-screamo/asyncapi.net"
+                },
+                "filters": {
+                    "language": "C#",
+                    "technology": [".NET", "ASP.NET"],
                     "categories": ["code-first"]
                 }
             },
@@ -141,6 +227,19 @@
                     "technology": [".NET"],
                     "categories": ["code-first"]
                 }
+            },
+            {
+                "title": "FastStream",
+                "description": "A powerful and easy-to-use Python framework for building asynchronous services interacting with event streams such as Apache Kafka, RabbitMQ and NATS.",
+                "links": {
+                    "websiteUrl": "https://faststream.airt.ai",
+                    "repoUrl": "https://github.com/airtai/FastStream"
+                },
+                "filters": {
+                    "language": "Python",
+                    "categories": ["code-first", "framework"],
+                    "hasCommercial": false
+                }
             }
         ]
     },
@@ -181,6 +280,21 @@
                     "language": "Java",
                     "technology": ["Groovy", "Maven"],
                     "categories": ["code-generator"]
+                }
+            },
+            {
+                "title": "The Codegen Project",
+                "description": "Stop wasting time on manual code. Generate Payloads, parameters, headers, types, channel wrappers, and more from your AsyncAPI document! Works with Kafka, NATS, MQTT, event-source, AMQP, HTTP Client!",
+                "links": {
+                    "websiteUrl": "https://the-codegen-project.org/",
+                    "docsUrl": "https://the-codegen-project.org//docs",
+                    "repoUrl": "https://github.com/the-codegen-project/cli/"
+                },
+                "filters": {
+                    "language": "TypeScript",
+                    "technology": ["TypeScript"],
+                    "categories": ["code-generator", "cli"],
+                    "hasCommercial": false
                 }
             }
         ]
@@ -316,7 +430,8 @@
                 "title": "Bump.sh",
                 "description": "OpenAPI 2 & 3 / AsyncAPI 2 documentation generator, with automatic changelog and visual diff.",
                 "links": {
-                    "websiteUrl": "https://bump.sh/"
+                    "websiteUrl": "https://bump.sh/",
+                    "docsUrl": "https://docs.bump.sh/help/"
                 },
                 "filters": {
                     "categories": ["documentation-generator"],
@@ -403,6 +518,19 @@
                     "language": "Python",
                     "technology": ["Flask"],
                     "categories": ["framework"]
+                }
+            },
+            {
+                "title": "FastStream",
+                "description": "A powerful and easy-to-use Python framework for building asynchronous services interacting with event streams such as Apache Kafka, RabbitMQ and NATS.",
+                "links": {
+                    "websiteUrl": "https://faststream.airt.ai",
+                    "repoUrl": "https://github.com/airtai/FastStream"
+                },
+                "filters": {
+                    "language": "Python",
+                    "categories": ["code-first", "framework"],
+                    "hasCommercial": false
                 }
             }
         ]
